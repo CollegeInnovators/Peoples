@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.com.peoples.ProfilesActivity">
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/profile_pic_large"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="24dp"
+        android:text="First Name:"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_profile" />
+
+    <TextView
+        android:id="@+id/tv_real_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="MyName"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_name"
+        app:layout_constraintStart_toEndOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/tc_sname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="24dp"
+        android:text="Last Name:"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="Real Name"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tc_sname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_real_name" />
+
+    <TextView
+        android:id="@+id/tv_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="20dp"
+        android:text="Position:"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tc_sname" />
+
+    <TextView
+        android:id="@+id/tv_real_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:text="position"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_position"
+        app:layout_constraintStart_toEndOf="@+id/tv_position" />
+
+    <TextView
+        android:id="@+id/tv_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="20dp"
+        android:text="Country:"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_position" />
+
+    <TextView
+        android:id="@+id/tv_real_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="24dp"
+        android:text="Real Country"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_country"
+        app:layout_constraintTop_toBottomOf="@+id/tv_real_position" />
+
+    <Button
+        android:textColor="#fff"
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_country"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>
